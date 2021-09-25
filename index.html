@@ -4,68 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Website for Brad pitt's CV" >
     <title>Brad Pitt CV</title>
     <link rel="stylesheet" href="website.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Brad Pits CV</h1>
+        <div id="Header">
+             <h1>Welcome to Brad Pits CV</h1>
+         </div>
+        <div id="top">
+            <div id="TopPictureIntro">
+            <img class="BioGraphyImage" src="BradPitt.jpg" width="200px" alt="Image of Brad Pitt">
+            <div id="Biography">
+                <p class="Introduction">        
+                    My name is <b>Brad Pitt</b>. I am an actor from Shawnee, Oklahoma, though I now live in Los Angeles like every other actor.
+                    I have a wide range of acting skills, from action and thriller to comedy and drama. I am known for playing charismatic male leads, and have been described as the world's most attractive man by several media outlets. 
+               </p>        
+                <p class="Introduction"> 
+                    Nowadays I prefer subtler roles, including those where I play a father figure, which I am to my six children.
+                    Apart from acting, I have experience as a producer for many films with my own production company Plan B Entertainment, of which I am the CEO. In my spare time, I enjoy philantropy, architecture, and skateboarding. In my work with the Make It Right Foundation, I get to combine at least two of these interests—sometimes all three!
+                </p>
+            </div>
+            </div>
+        </div>
     </header>
     <article>
-        <p class="Introduction">        
-            My name is Brad Pitt. I am an actor from Shawnee, Oklahoma, though I now live in Los Angeles like every other actor.
-            I have a wide range of acting skills, from action and thriller to comedy and drama. I am known for playing charismatic male leads, and have been described as the world's most attractive man by several media outlets. Nowadays I prefer subtler roles, including those where I play a father figure, which I am to my six children.
-           <br> Apart from acting, I have experience as a producer for many films with my own production company Plan B Entertainment, of which I am the CEO. In my spare time, I enjoy philantropy, architecture, and skateboarding. In my work with the Make It Right Foundation, I get to combine at least two of these interests—sometimes all three!
-            </p>
         
-        <figure>
+            <div class="middle">
+                <figure class="BradPittPictures">
+                    
+                    <img class="BradpittPhoto" src="BradPittFightClub.jpg" width="380px" alt="Smoking Brad Pitt in the Movie Fight Club"> </img>
+                    <figcaption>Picture from the movie Fight Club. I got an award for this scene</figcaption>
+                </figure>
+                    <figure class="BradAndLeoPhoto1">   
+                    <img class="BradAndLeoPhoto" src="BradAndLeo.jpg" width="480px" alt="Brad Pitt and Leonardo DiCaprio in the movie Once upon a time in Hollywood"> </img>
+                    <figcaption>Me and Leonardo Dicaprio in my latest movie Once upon a time in Hollywood</figcaption>
+                </figure>
+            </div>
             
-            <img class="BradpittPhoto" src="BradPittFightClub.jpg" width="380px" alt="Smoking Brad Pitt in the Movie Fight Club">
-            <figcaption>Picture from the movie Fight Club. I got an award for this scene</figcaption>
-           
+        <section class="ArticleLists">
 
-            <img src="BradAndLeo.jpg" class="BradAndLeoPhoto" width="480px" alt="Brad Pitt and Leonardo DiCaprio in the movie Once upon a time in Hollywood">
-            <figcaption>Me and Leonardo Dicaprio in my latest movie Once upon a time in Hollywood</figcaption>
-        </figure>
-             
-        <section class="ArticleSections">
-      
-          <ul class="MovieList"><strong>Most successfull movies</strong> 
-           <li>Once Upon a Time... In Hollywood (2019)</li>
-           <li>The Big Short (2015)</li>
-           <li>World War Z (2013)</li>
-           <li>Moneyball (2011)</li>
-           <li>The Curious Case of Benjamin Button (2008)</li>
-           <li>Babel (2006)</li>
-           <li>Troy (2004)</li>
-           <li>Ocean's Eleven (2001)</li>
-           <li>Fight Club (1999)</li>
-           <li>12 Monkeys (1995)</li>
-           <li>Se7en (1995)</li>
-           <li>Thelma & Louise (1991)</li>
-        </ul>
-        
-    
-           <ul class="AwardsList"> <strong> Awards </strong>
-            <li>Winner: Academy Award for Best Supporting Actor, Once Upon a Time... In Hollywood (2019)</li>    
-            <li>Winner: Academy Award for Best Motion Picture (as producer), 12 Years a Slave (2013)</li>    
-            <li>Winner: Golden Globe for Best Supporting Actor, Twelve Monkeys (1995)</li>    
-            <li>Nominee: Academy Award for Best Motion Picture (as producer), The Big Short (2015)</li>    
-            <li>Nominee: Academy Award for Best Actor, Moneyball (2011)</li>    
-            <li>Nominee: Academy Award for Best Actor, The Curious Case of Benjamin Button (2008)</li>    
-            <li>Nominee: Golden Globe for Best Actor, The Curious Case of Benjamin Button (2008)</li>    
+            <div id="MovieExperience">
+                <div class="Lists">
+                        <div id="Movielist">
+                             <h2>Most successfull movies</h2>
+                                <ul class="MovieList"> 
+                                    <li>Once Upon a Time... In Hollywood (<time datetime="2019-05-21">2019</time>)</li>
+                                    <li>The Big Short (<time datetime="2015-11-12">2015</time>)</li>
+                                    <li>World War Z (<time datetime="2013-06-22">2013</time>)</li>
+                                    <li>Moneyball (<time datetime="2011-09-09">2011</time>)</li>
+                                    <li>The Curious Case of Benjamin Button (<time datetime="2008-12-10">2008</time>)</li>
+                                    <li>Babel (<time datetime="2006-05-23">2006</time>)</li>
+                                    <li>Troy (<time datetime="2004-05-09">2004</time>)</li>
+                                    <li>Ocean's Eleven (<time datetime="2001-12-05">2001</time>)</li>
+                                    <li>Fight Club (<time datetime="1999-09-10">1999</time>)</li>
+                                    <li>12 Monkeys (<time datetime="1995-12-08">1995</time>)</li>
+                                    <li>Se7en (<time datetime="1995-09-15">1995</time>)</li>
+                                    <li>Thelma &amp; Louise (<time datetime="1991-05-20">1991</time>)</li>
+                                </ul>
+                     </div>
+                    <div id="Awardslist">
+                            <h2>Awards</h2> 
+                            <ul class="AwardsList"> 
+                                <li><em class="Goldenwinner">Winner:</em> Academy Award for Best Supporting Actor, Once Upon a Time... In Hollywood (<time datetime="2019">2019</time>)</li>
+                                    <li><em class="Goldenwinner">Winner:</em> Academy Award for Best Motion Picture (as producer), 12 Years a Slave (<time datetime="2013">2013</time>)</li>
+                                    <li><em class="Goldenwinner">Winner:</em> Golden Globe for Best Supporting Actor, Twelve Monkeys (<time datetime="1995">1995</time>)</li>
+                                    <li><em class="Silvernominee">Nominee:</em> Academy Award for Best Motion Picture (as producer), The Big Short(<time datetime="2015">2015</time>)</li>
+                                    <li><em class="Silvernominee">Nominee:</em> Academy Award for Best Actor, Moneyball (<time datetime="2011">2011</time>)</li>
+                                    <li><em class="Silvernominee">Nominee:</em> Academy Award for Best Actor, The Curious Case of Benjamin Button (<time datetime="2008">2008</time>)</li>
+                                    <li><em class="Silvernominee">Nominee:</em> Golden Globe for Best Actor, The Curious Case of Benjamin Button (<time datetime="2008">2009</time>)</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
 
-        </ul>
         </section>
-        </article>
+
+    </article>
 
         <footer>
         
-            <p>Contact
-            Brad Pitt <br>
-            123 Hollywood Blvd. <br>
-            CA 45678 USA <br>
-            <a href="Brad.pitt@example.com">brad.pitt@example.com</a> </p>
+               <P class="ContanctInfo">Contact Information:</P>
+               <P class="ContanctInfo">Brad Pitt</P>
+               <P class="ContanctInfo">Hollywood 123 Blvd</P>
+               <P class="ContanctInfo">CA 45678 USA</P>
+               <P class="ContanctInfo"><a href="Brad.pitt@example.com">brad.pitt@example.com</a></P>
+                
         </footer>
 
 </body>

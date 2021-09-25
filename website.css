@@ -1,55 +1,135 @@
-* {
+/* article, .ArticleLists {
     display: flex;
     flex-direction: column;
-}
+} */
 
+* {
+    box-sizing: border-box; 
+}
+#TopPictureIntro{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+html{
+    background-color: hsl(40, 100%, 85%);
+    margin: 3%;
+    padding: 3%;
+    
+}
+header{
+    padding: 2%;
+    margin: 2%;
+}
+.BiographyHeader{
+
+    border: solid green;
+    border: 5px;
+}
+.BioGraphyImage{
+    border-radius: 45%;
+}
+body{    
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+    border-radius: 8%;
+}
+.middle{
+    display: flex;
+    max-width:100%;
+    max-height:100%;
+}
+.BradpittPhoto, .BradAndLeoPhoto{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 5%;
+}  
 ul, li {
     margin: 4px;
+    padding: 2px;
+    font-size: 18px;
+    max-width: 100%;
 }
-
-
+.ContanctInfo{
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
 .Introduction
 {
     max-width: 780px;
     margin: 3px;
-  
+    font-size: 18px;
 }
-
-.ArticleSections {
+.Goldenwinner{  
+    font-size: larger;
+    font-weight: bold;
+    color: orange;
+}
+.Silvernominee{
+    font-size: larger;
+    font-weight: bold;
+    color: silver;
+}
+.ArticleLists {
+    display: flex;
     flex-direction: row;
-    border-color: lawngreen;
-    border: 3px solid gray;
-   
+    margin: 10px;
+    padding: 5px;
 }
-figure{
-    flex-direction: row;
+footer{ 
+   display: flex;
+   font-size: 18px;
+   margin-top: 20px;
+   padding: 10px;
+   justify-content: center;
+   margin-right: 0;
+   padding-right: 0;
 }
-figcaption{
-    
-    justify-content: flex-end;
+.Lists{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 720px) {
-    .ArticleSections { width: 480px;
+    .middle { width: 480px;
         flex-direction: column;
-        background-color: white;
-        font-size: smaller;
+        max-width:100%;
+        max-height:100%;
     }
     .Introduction{
-        font-size: smaller;
+        font-size: 16px;
     }
     .BradpittPhoto
     {
-        width: 280px;
+        align-items: center;
+        max-width:100%;
+        max-height:100%;
     }
     .BradAndLeoPhoto{
-        width: 300px;
+        max-width:100%;
+        max-height:100%;
     }
-    figure{
+    .Lists {
+        flex-direction: column;  
+    }
+    #MovieAwards{
+        font-size: 5px;
+    }
+    footer{
         flex-direction: column;
+        align-items: center;
     }
-    figcaption{
+    #TopPictureIntro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .BioGraphyImage{
+        width: 55%;
+    }
     
-        justify-content: none;
-    }
+    
 }
